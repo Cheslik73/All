@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+  </head>
+  <body>
+  <h1>Заполните форму</h1>
+   
+    <table border="1">
+      <tr>
+        <td>
+            <label for = "firstname-field">
+                Имя
+            </label>
+        </td>
+        <td>
+            <form action>
+                <input type="text" name="firstname" id="firstname-field">
+            </form>
+        </td>
+      </tr>
+      <tr>
+        <td><label for = "phone-field">Телефон</label></td>
+        <td>
+            <input type="tel" name="phone" id="phone-field" pattern = "\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
+        </td>
+      </tr>
+      <tr>
+        <td><label for = "rang-field">Должность</label></td>
+        <td>
+            <input type="text" name="rang" id="rang-field">
+        </td>
+      </tr>
+      <tr>
+        <td><label for = "mail-field">E-mail</label></td>
+        <td>
+            <input type="email" name="mail" id="mail-field" required>
+        </td>
+      </tr>
+      <tr>
+        <td><label for = "product-field">Товар</label></td>
+        <td>
+           <select name = "products">
+           <option>банан</option>
+           <option>арбуз</option>
+           <option>мандарин</option>
+           
+           </select>
+        </td>
+      </tr>
+
+      
+    </table>
+    <input type="submit" value= "Отправить форму">
+  </body>
+</html>
